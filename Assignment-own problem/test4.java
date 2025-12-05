@@ -36,6 +36,7 @@ class test4
         }
 
         System.out.print("]");
+        System.out.println(); // Flush output
     }
 
      
