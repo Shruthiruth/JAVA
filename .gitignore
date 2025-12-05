@@ -1,0 +1,29 @@
+# System folders (JDK, config, large binaries)
+lib/
+conf/
+bin/
+out/
+target/
+
+# Documentation
+LICENSE
+README
+*.md
+
+# IDE and editor
+.vscode/
+.idea/
+*.class
+*.jar
+
+# Build artifacts
+*.o
+*.so
+*.dll
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Untracked
+Array Assignments.pdf
