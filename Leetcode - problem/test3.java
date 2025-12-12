@@ -12,12 +12,17 @@ class test3
 {
     public static void main(String[] args) {
 
-        int account[][]={{1,2,3},{3,2,1}};
+        int account[][]={
+            {1, 5},
+            {7, 3},
+            {3, 5}
+    };
         
         int maxwealth=0;
         for(int i=0;i<account.length;i++)
         {
             int sum=0;
+            
             for (int j=0;j<account[i].length;j++) {
 
                 
@@ -30,6 +35,6 @@ class test3
                 }
             }
         }
-System.out.println(maxwealth);
+            System.out.println(maxwealth);
     }
 }
