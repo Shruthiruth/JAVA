@@ -20,7 +20,7 @@ class test6 {
 
         // print last chunk if it exists
         if (!chunk.equals("")) {
-            System.out.println(chunk);
+           System.out.println(chunk);
         }
     }
 }
