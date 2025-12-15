@@ -6,7 +6,7 @@ class test2 extends test1
 {
 
 }
-class test3
+class test3 
 {
     public static void main(String[] args) {
         test1 t1=new test1();
@@ -21,5 +21,8 @@ class test3
 
         System.out.println(t1.equals(s1));
         System.out.println(t1==t2);//false
+        System.out.println(t2.equals(t3));//false --since reference number is different
+        System.out.println(t2==t3);
+        System.out.println(s1.equals(s2));
     }
 }
