@@ -3,7 +3,12 @@ class test5
     public static void main(String[] args) {
         //Thread.sleep(500); //interrupted exeception
         Thread t=new Thread();
-        t.setPriority(100); //illegal argument exeception
+       // t.setPriority(100); //illegal argument exeception
+       try {
+           t.setPriority(100);
+       } catch (IllegalArgumentException e) {
+        System.out.println(e);
+       }
         System.out.println("GM");
     }
 }
