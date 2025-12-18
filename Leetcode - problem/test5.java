@@ -29,9 +29,7 @@ class test5 {
                     System.out.print(",");
                 }
 
-            } else {
-                continue;
-            }
+            } 
 
         }
         System.out.print("]");

@@ -5,7 +5,7 @@ public class test10
 {
     public static void main(String[] args) {
         int arr[]={1, 3, 5, 7, 9, 11};
-        int target=7;
+        int target=9;
 
         int low=0;
         int high=arr.length-1;
