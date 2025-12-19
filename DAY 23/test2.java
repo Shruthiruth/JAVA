@@ -7,7 +7,7 @@ class test2
         try {
             System.out.println(eids[8]);
         } catch (ArrayIndexOutOfBoundsException e) {
-            System.out.println(e);
+            System.out.println(e.getMessage());
         }
         System.out.println(eids[3]);
         System.out.println("GM");
