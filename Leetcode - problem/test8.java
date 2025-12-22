@@ -46,7 +46,10 @@ class test8
 
             char p1 = scanner.next().toUpperCase().charAt(0);
 
-            if (p1 == 'Q') break;
+            if (p1 == 'Q') {
+                System.out.println("Game exited by user");
+                break;
+            }
 
             char p2;
             if(Player==1)
@@ -94,8 +97,8 @@ class test8
             {
                 System.out.println("Final winner is player 1 and Player 2---it's a tie Please play again");
             }
-        
-
-        
+            
+       
+      
     }
 }
