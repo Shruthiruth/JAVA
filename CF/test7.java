@@ -1,18 +1,18 @@
 
 import java.util.Iterator;
-import java.util.PriorityQueue;
+import java.util.LinkedList;
 // no hetero geneous data in priority queue and in linked list is hetero allowed
 class test7
 {
     public static void main(String[] args) {
         
-        PriorityQueue<String> q=new PriorityQueue<>();
+        //PriorityQueue<String> q=new PriorityQueue<>();
 
+        LinkedList q=new LinkedList();
         q.add("A");
         q.add("B");
         q.add("C");
-        q.offer("2"
-        );
+        q.offer(100 );
 
         System.out.println(q);
 
@@ -34,7 +34,7 @@ class test7
             }
 
 
-            for(String s:q)
+            for(Object s:q)
             {
                 System.out.println(s);
             }
