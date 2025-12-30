@@ -29,10 +29,34 @@ class test8
 
         System.out.println(hp.isEmpty());
         System.out.println(hp.keySet()); // return key as a 1 set
+
+
+        for(Object i:hp.keySet())
+        {
+            System.out.println(i);
+        }
+
+        for(Object i:hp.keySet())
+        {
+            System.out.println(i+"      "+hp.get(i));
+        }
         System.out.println(hp.values()); // return all value as a collection
 
+        for(Object i:hp.values())
+        {
+            System.out.println(i);
+        }
+
         System.out.println(hp.entrySet()); //return all entry as a set
-        
+
+        for(Object i:hp.entrySet())
+        {
+            System.out.println(i);
+        }
+        // for(Map.Entry entry:hp.entrySet())
+        // {
+        //     System.out.println(entry.getKey()+"     "+entry.getValue());
+        // }
 
     }
 }
