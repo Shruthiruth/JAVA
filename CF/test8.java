@@ -1,5 +1,5 @@
 
-import java.util.HashMap;
+import java.util.*;
 
 
 
@@ -57,6 +57,11 @@ class test8
         // {
         //     System.out.println(entry.getKey()+"     "+entry.getValue());
         // }
-
+        Set s=hp.entrySet();
+        Iterator it=s.iterator();
+        while(it.hasNext())
+        {
+            System.out.println(it.next());
+        }
     }
 }
