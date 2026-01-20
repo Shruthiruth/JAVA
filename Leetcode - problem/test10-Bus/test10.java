@@ -11,7 +11,7 @@ class test10
         ArrayList<Booking> Bookings=new ArrayList<>();
 
         Buses.add(new Bus(1,"Glassdoor",54));
-         Buses.add(new Bus(2,"A1 Travels",50));
+         Buses.add(new Bus(2,"A1 Travels",0));
           Buses.add(new Bus(3,"No 1 Travels",45));
            Buses.add(new Bus(4,"Intercity",0));
 
