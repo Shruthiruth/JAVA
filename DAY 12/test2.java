@@ -4,13 +4,7 @@ class test2
     private String ename;
     private String eloc;
 
-    public int getEid() {
-        return eid;
-    }
-
-    public void setEid(int eid) {
-        this.eid = eid;
-    }
+   
 
     public String getEname() {
         return ename;
@@ -26,6 +20,14 @@ class test2
 
     public void setEloc(String eloc) {
         this.eloc = eloc;
+    }
+
+    public int getEid() {
+        return eid;
+    }
+
+    public void setEid(int eid) {
+        this.eid = eid;
     }
     
 }
