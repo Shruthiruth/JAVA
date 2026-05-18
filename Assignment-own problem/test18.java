@@ -2,10 +2,10 @@
 // Use this editor to write, compile and run your Java code online
 // Given an array of integers, find all the duplicate elements in the array and return them as a list.
 import java.util.*;
-class Main {
+class test18 {
     public static void main(String[] args) {
         
-        int arr[]={1,2,3,2,4,5,1,6};
+        int arr[]={1,2,3,2,4,4,5,1,6};
     
         
         HashMap <Integer,Integer> map = new HashMap();
