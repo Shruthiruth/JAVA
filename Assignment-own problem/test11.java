@@ -36,7 +36,7 @@
 // Online Java Compiler
 // Use this editor to write, compile and run your Java code online
 import java.util.Arrays;
-class Main {
+class test11 {
     public static void main(String[] args) {
         int arr[]={5, 3, 8, 4, 2};
         
