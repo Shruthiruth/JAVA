@@ -15,11 +15,44 @@ public class test12
 
         for(int i=0;i<n;i++)
         {
-           primary_sum=primary_sum+arr[i][i];
-           secondary_sum=secondary_sum+arr[i][n-1-i];
+           primary_sum+=arr[i][i];
+           secondary_sum+=arr[i][n-1-i];
         }
 
         int result=Math.abs(primary_sum-secondary_sum);
         System.out.println(result);
     }
 }
+
+// public class DiagonalDifference {
+
+//     public static int diagonalDifference(int[][] matrix) {
+
+//         int primary = 0;
+//         int secondary = 0;
+
+//         int n = matrix.length;
+
+//         for (int i = 0; i < n; i++) {
+
+//             primary += matrix[i][i];
+
+//             secondary += matrix[i][n - 1 - i];
+
+//         }
+
+//         return Math.abs(primary - secondary);
+//     }
+
+//     public static void main(String[] args) {
+
+//         int[][] matrix = {
+//                 {1,2,3},
+//                 {4,5,6},
+//                 {9,8,9}
+//         };
+
+//         System.out.println(diagonalDifference(matrix));
+
+//     }
+// }
