@@ -1,43 +1,74 @@
-//Given an integer array, move all zeros to the end while maintaining the order of non-zero elements.
-//Do it in-place without using another array
+// //Given an integer array, move all zeros to the end while maintaining the order of non-zero elements.
+// //Do it in-place without using another array
 
-class test4
-{
+// class test4
+// {
 
-    public static void main(String[] args) {
+//     public static void main(String[] args) {
         
-         int arr[] = {0, 1, 0, 3, 12};
+//          int arr[] = {0, 1, 0, 3, 12};
 
-        int j =0;
+//         int j =0;
 
-        for(int i=0;i<arr.length;i++)
-        {
-            if(arr[i]!=0)
-            {
-                arr[j]=arr[i];
+//         for(int i=0;i<arr.length;i++)
+//         {
+//             if(arr[i]!=0)
+//             {
+//                 arr[j]=arr[i];
+//                 j++;
+//             }
+//         }
+
+//         while(j<arr.length)
+//         {
+//             arr[j]=0;
+//             j++;
+//         }
+
+//             System.out.print("[");
+//         for(int i=0;i<arr.length;i++)
+//         {
+//             System.out.print(arr[i]);
+//             if(i!=arr.length-1)
+//             {
+//                 System.out.print(", ");
+//             }
+//         }
+
+//         System.out.print("]");
+//         System.out.println(); // Flush output
+//     }
+
+     
+// }
+
+import java.util.Arrays;
+
+public class test4 {
+
+    static void moveZeros(int[] arr) {
+
+        int j = 0;
+
+        for(int i=0;i<arr.length;i++){
+
+            if(arr[i]!=0){
+
+                int temp = arr[j];
+                arr[j] = arr[i];
+                arr[i] = temp;
+
                 j++;
             }
         }
-
-        while(j<arr.length)
-        {
-            arr[j]=0;
-            j++;
-        }
-
-            System.out.print("[");
-        for(int i=0;i<arr.length;i++)
-        {
-            System.out.print(arr[i]);
-            if(i!=arr.length-1)
-            {
-                System.out.print(", ");
-            }
-        }
-
-        System.out.print("]");
-        System.out.println(); // Flush output
     }
 
-     
+    public static void main(String[] args) {
+
+        int arr[] = {0,1,0,3,12};
+
+        moveZeros(arr);
+
+        System.out.println(Arrays.toString(arr));
+    }
 }
